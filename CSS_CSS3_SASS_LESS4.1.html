@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>This is the Title of the Page</title>
+<style>
+
+.bubble{
+position: relative;
+background: #0066ff;
+width: 110px;
+height: 50px;
+padding:15px;
+margin-left: 50px;
+border-radius: 10px;
+}
+.bubble::after{
+content:"";
+height: 0px;
+width:0px;
+border-top:15px solid transparent;
+border-bottom: 15px solid transparent;
+border-left:8px solid transparent;
+border-right: 25px solid #0066ff;
+position: absolute;
+top:10px;
+left:-33px;
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="bubble">
+		Hi!
+</div>		
+
+</body>
+</html>
+
+
